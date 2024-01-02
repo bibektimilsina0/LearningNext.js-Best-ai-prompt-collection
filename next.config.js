@@ -4,6 +4,7 @@
 
 module.exports = {
     images: {
-      domains: ['avatars.githubusercontent.com', 'example.com', 'another-domain.com'],
+      domains: ['avatars.githubusercontent.com','lh3.googleusercontent.com', 'example.com', 'another-domain.com'],
     },
   };
+ 

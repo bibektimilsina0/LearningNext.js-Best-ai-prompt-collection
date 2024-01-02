@@ -23,7 +23,7 @@ function CreatePrompt() {
             body: JSON.stringify({
               prompt: post.prompt,
               tag: post.tag,
-              userId: session?.user._id
+              userId: session?.user.id
             }),
             headers: {
               "Content-Type": "application/json"

@@ -4,11 +4,11 @@ import { useState } from "react";
 import Image from "next/image"
 function PromptCard({post ,handleTagClick}) {
     const [copied ,setCopied]=useState('')
-  
+   console.log(post)
     return (  
         <div className="prompt_card">
-           {/* <div className="flex justify-between items-start gap-5">
-
+           <div className="flex justify-between items-start gap-5">
+            
             <div className="flex-1 flex  justify-start">
                 <Image
                 src={post.creator.image}
@@ -19,7 +19,7 @@ function PromptCard({post ,handleTagClick}) {
                 />
                 <div className="flex-col">
                     <h3 className=" text-gray-900">{post.creator.username}</h3>
-                    <p className="font-inter text-gray-500" >{post.creator.email}</p>
+                    <p className="font-inter text-gray-500" >{'*******'+post.creator.email.slice(6)}</p>
                 </div>
               
             </div>
@@ -33,7 +33,7 @@ function PromptCard({post ,handleTagClick}) {
                     </div>
            </div>
            <p>{post.prompt}</p>
-           <P>{post.tag}</P> */}
+           <p>{post.tag}</p>
         </div>
     );
 }
